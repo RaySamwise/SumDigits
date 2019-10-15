@@ -24,17 +24,17 @@ public class Main
 
     public  static Integer sumDigits(Integer number)
     {
-        Integer inNumber = number;
+
         Integer outNumber = 0;
 
-        for (int i = 0; i < inNumber.toString().length();i++)
+        for (int i = 0; i < number.toString().length();i++)
         {
-            Character y = inNumber.toString().charAt(i);
+            Character y = number.toString().charAt(i);
             outNumber += Integer.parseInt(y.toString());
         }
         System.out.println("Сумма "+ outNumber);
 
-        return 0;
+        return outNumber;
 
     }
 
